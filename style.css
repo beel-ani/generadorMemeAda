@@ -1,0 +1,114 @@
+
+*{
+    box-sizing: border-box;
+}
+body.modo-oscuro{
+    background-color: #302E2E;
+    color: whitesmoke;
+    
+}
+/*Esta clase se activa desde JS*/
+body.modo-claro{
+    background-color: whitesmoke;
+    color: #302E2E;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    background-color: #9C9C9C;
+}
+.titulo-generador{
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+    letter-spacing: -1px;
+}
+.contenedor-de-botones{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+.btn{
+    padding: 0 10px;
+    border-radius: 3px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+/* EDITOR GENERAL ES EL DIV QUE ENVUELVE TODO*/
+.editor-general{
+    display: flex;
+    flex-grow: 1;
+}
+/*MAIN CONTENEDOR MEME*/
+.contenedor-meme{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    background-color: black;
+}
+/*LA CELDA ES EL "CANVAS" QUE CONTIENE LA IMAGEN Y LOS TEXTOS PROPIOS DEL MEME*/
+.celda-imagen{
+    width: 100%;
+    max-width: 610px;
+    height: 610px;
+    background-color: #9C9C9C;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+.texto-meme{
+    width: 100%;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    padding: 35px 50px;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: Verdana;
+}
+/*ESTE ES EL DIV QUE CONTIENE LA IMAGEN QUE VENDRA LA URL DEL FORM*/
+.imagen-de-meme {
+    width: 100%;
+    flex-grow: 1;
+    background-size: cover;
+}
+/*BOTON DESCARGAR MEME*/
+#descargar-meme{
+    margin-top: 20px;
+    padding: 10px 10px;
+    background-color: #E9E639;
+    color: black;
+}
+.form{
+    width: 260px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #474444;
+    padding: 30px 15px;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+/*CLASE PARA OCULTAR LOS ELEMENTOS*/
+/*.ocultar{
+    display: none;
+}
+*/  

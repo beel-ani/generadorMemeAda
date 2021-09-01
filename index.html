@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dac9c574a1.js" crossorigin="anonymous"></script>
+</head>
+
+
+</body class="modo-oscuro">
+
+<header>
+    <h1 class="titulo-generador"> Generador de Meme </h1>
+    <div class="contenedor-de-botones">
+        <button class="btn" id="boton-img"> Imagen </button>
+        <button class="btn" id="boton-texto"> Texto </button>
+        <button class="btn" id="boton-modo-ocsuro"> Modo Oscuro </button>
+        <button class="btn" id="boton-modo-claro"> Modo Claro </button>
+    </div>
+</header>
+
+<!--EDITOR GENERAL DEL MEME QUE COMUNICA LA IMAGEN CON EL FORM-->
+<div class="editor-general">
+
+    <main class="contenedor-meme">
+    <div class="celda-imagen" id="celda-imagen">
+
+        <p class="texto-meme" id="texto-superior">Texto Superior</p>
+        <div src="" alt="" id="imagen-de-meme" class="imagen-de-meme" aria-label="Imagen de meme"></div>
+        <p class="texto-meme" id="texto-inferior">Texto Inferior</p>
+    
+    </div>
+
+    <button id="descargar-meme" type="button" class="btn"> Descargar Meme</button>
+
+    </main>
+
+    <aside class="form ocultar" id="form">
+        <!--ACA HACER UN BOTON QUE CIERRE EL FORM-->
+        <!----------------------------------------***------------------------------------------------------>
+
+        <!--💠FORMULARIO PARA LA IMAGEN💠--(FATAL DE HACER)-->
+
+        <section class="form-imagen" id="form-imagen">
+
+        </section>
+
+        <!--💠FORMULARIO PARA EL TEXTO💠--(FALTA DE HACER)-->
+        
+        <section class="form-texto ocultar" id="form-texto">
+
+        </section>
+
+    </aside>
+
+
+
+</div>
+
+
+    
+<script src="app.js"></script>
+</body>
+</html>
+
