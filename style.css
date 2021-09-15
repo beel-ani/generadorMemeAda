@@ -5,7 +5,11 @@
 body.modo-oscuro{
     background-color: #302E2E;
     color: whitesmoke;
-    
+------fuentes-para-seleccionar-------------
+h1{
+           font-family:Arial, Helvetica, sans-serif
+           font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+       }   
 }
 /*Esta clase se activa desde JS*/
 body.modo-claro{
